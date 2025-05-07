@@ -25,8 +25,7 @@ class BancoGame
             
         };
         
-        var drawnNumbers = new HashSet<int>(); //продвинутый лист, хранит уникальные значения чтоб не хранить их дважды
-
+        var drawnNumbers = new HashSet<int>(); //stores unique values of the drawn numbers
         
         
         while (true)
@@ -39,7 +38,7 @@ class BancoGame
             {
                 if (drawnNumbers.Contains(number))
                 {
-                    Console.WriteLine("Draw number {0} is already in the list", number); //нвоая для меня запись, хотел попробовать.
+                    Console.WriteLine("Draw number {0} is already in the list", number);
                 }
                 else
                 {
@@ -56,7 +55,7 @@ class BancoGame
             
             Console.Clear();
             
-            //текущее состояние таблицы
+            //текущее состояние таблицы --Current board status
             Console.WriteLine("\nCurrent board status");
             foreach (var pair in board)
                 
@@ -67,7 +66,7 @@ class BancoGame
                     {
                             foreach (var num in row)
                             {
-                                //играю в цвета
+                                //играю в цвета -just for fun added color to the numbers
                                 if (drawnNumbers.Contains(num))
                                 {
                                     Console.ForegroundColor = ConsoleColor.Green;
