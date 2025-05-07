@@ -84,10 +84,9 @@ class BancoGame
                     } 
                     Console.WriteLine();
             }
+
             
-            
-            
-            //ChekWin
+                                                        //---------ChekWin-----------
             bool someOneWon = false;
 
             foreach (var pair in board)
