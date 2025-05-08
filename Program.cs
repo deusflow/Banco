@@ -56,9 +56,9 @@ class BancoGame
             Console.Clear();
             
             //текущее состояние таблицы --Current board status
-            Console.WriteLine("\nCurrent board status");
-            foreach (var pair in board)
+            Console.WriteLine("\nCurrent board status"); 
                 
+                foreach (var pair in board)
             { Console.WriteLine($"{pair.Key}'s board:");
                     
                     foreach (var row  in pair.Value)
